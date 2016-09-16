@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Main {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         Figuras[] ll = new Figuras[4];
         ll[0]=new rectangulo(2,7);
         ll[1]=new cuadrado(10);
