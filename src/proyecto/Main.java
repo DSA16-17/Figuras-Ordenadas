@@ -21,7 +21,7 @@ public class Main {
         //En este for printamos las areas de cada figura ordenadas de menor a mayor
         for(Figuras f:ll)
         {
-            System.out.print(f.area()+"/////");
+            System.out.print(f.area()+",");
 
         }
 
