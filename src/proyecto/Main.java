@@ -1,5 +1,4 @@
 package proyecto;
-import java.io.*;
 import java.util.Arrays;
 
 
@@ -16,40 +15,15 @@ public class Main {
             suma=suma+f.area();
 
         }
-        System.out.print(suma+"//////");
+        System.out.print(suma+"/////");
+        //Ordenamos segun la condicion de ordenacion del metodo compareTo en la clase abstracta Figuras
         Arrays.sort(ll);
-
+        //En este for printamos las areas de cada figura ordenadas de menor a mayor
         for(Figuras f:ll)
         {
-
-            System.out.print(f.area()+",");
-
-        }
-
-
-
-        File file = new File("c:/Users/Turpitude/Desktop/fichero.bin");
-        FileOutputStream fos = new FileOutputStream(file);
-        FileInputStream fis = new FileInputStream("c:/Users/Turpitude/Desktop/fichero.bin");
-        ObjectOutputStream out = new ObjectOutputStream(fos);
-        ObjectInputStream in = new ObjectInputStream(fis);
-        //Convertir objeto a byte y meter en fichero
-        out.writeObject(ll);
-        //Convertir bytes y recuperar objeto
-        Figuras[] llrecuperar= new Figuras[4];
-        try {
-            llrecuperar=(Figuras[])in.readObject();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        }
-
-        for(Figuras f:llrecuperar)
-        {
-
-            System.out.print(f.area());
+            System.out.print(f.area()+"/////");
 
         }
-
 
     }
 
